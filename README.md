@@ -90,6 +90,7 @@ Also, you can reference the script file via [CDN]() which will add a global comp
 | maxFiles | Number, Object | a maximum number of files to be uploaded. You can also pass an object with `limit` and `error message`.|
 | acceptedFiles | Array, Object | File types to be accepted. `['image/*', 'application/pdf']`.
 | accept | Function | A custom function to be used for validating each file upload. This method receives a `done` callback. In the case of any errors, you must call done with a single error argument.
+| withCredentials | Boolean | Set xhr.withCredentials in Xhr request ( share cookies ) 
 
 #### maxFilesize
 The `maxFilesize` option defines the size of the file to be checked for when uploading files.
